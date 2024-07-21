@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Authentication/static/css/main.7374c074.css",
+    "main.js": "/Authentication/static/js/main.d5ac76b1.js",
+    "static/js/453.64512fd7.chunk.js": "/Authentication/static/js/453.64512fd7.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Authentication/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/Authentication/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/Authentication/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/Authentication/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/Authentication/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/Authentication/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Authentication/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/network-connection-background-abstract-style_23-2148875738.avif": "/Authentication/static/media/network-connection-background-abstract-style_23-2148875738.53b82c7e484b67d11ffc.avif",
+    "static/media/fa-v4compatibility.woff2": "/Authentication/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/logo.svg": "/Authentication/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Authentication/index.html",
+    "main.7374c074.css.map": "/Authentication/static/css/main.7374c074.css.map",
+    "main.d5ac76b1.js.map": "/Authentication/static/js/main.d5ac76b1.js.map",
+    "453.64512fd7.chunk.js.map": "/Authentication/static/js/453.64512fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7374c074.css",
+    "static/js/main.d5ac76b1.js"
+  ]
+}
