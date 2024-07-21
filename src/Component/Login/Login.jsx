@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import * as yup from "yup";
 import Helmet from "react-helmet";
+import { UserContext } from "../Context/UserContext";
+
 export default function Login() {
+  let { setUserToken } = useContext(UserContext);
   const [error, seterror] = useState(null);
   const [isLoading, setisLoading] = useState(false);
   let navigate = useNavigate();
@@ -19,8 +22,10 @@ export default function Login() {
       });
 
     if (data.message === "success") {
+      localStorage.setItem("userToken", data?.token);
+      setUserToken(data?.token);
       setisLoading(false);
-      navigate("/");
+      navigate("/welcomUser");
     }
   }
 
@@ -108,7 +113,7 @@ export default function Login() {
                   )}
                 </div>
                 <div className=" d-flex justify-content-between align-items-center">
-                  <label className="  text-color" for="remember">
+                  <label className="  text-color" htmlFor="remember">
                     <input
                       className="mx-2"
                       type="checkbox"
