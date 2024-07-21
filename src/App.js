@@ -7,8 +7,10 @@ import Layout from "./Component/Layout/Layout.jsx";
 import Forgetpassword from "./Component/ForgetPassword/ForgetPassword.jsx";
 import ResetCode from "./Component/ResetCode/ResetCode.jsx";
 import ResetPassword from "./Component/ResetPassword/ResetPassword.jsx";
+
 import UserContextProvider from "./Component/Context/UserContext.js";
 import WelcomeUser from "./Component/WelcomUser/WelcomeUser.jsx";
+import ProtectedRoute from "./Component/ProtectedRoute/ProtectedRoute.jsx";
 
 const routers = createBrowserRouter([
   {
@@ -17,10 +19,10 @@ const routers = createBrowserRouter([
     children: [
       { path: "login", element: <Login /> },
       { index: true, element: <Register /> },
-      { path: "forgetpassword", element: <Forgetpassword /> },
-      { path: "resetCode", element: <ResetCode /> },
-      { path: "resetPassword", element: <ResetPassword /> },
-      { path: "welcomUser", element: <WelcomeUser /> },
+      { path: "forgetpassword", element: <ProtectedRoute><Forgetpassword /></ProtectedRoute>  },
+      { path: "resetCode", element: <ProtectedRoute><ResetCode /></ProtectedRoute>  },
+      { path: "resetPassword", element: <ProtectedRoute><ResetPassword /></ProtectedRoute>  },
+      { path: "welcomUser", element: <ProtectedRoute><WelcomeUser /></ProtectedRoute>  },
     ],
   },
 ]);
